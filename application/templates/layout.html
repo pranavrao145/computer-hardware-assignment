@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>The GPU</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    </head>
+
+    <body onload="onload();">
+        {% block bgimage %}{% endblock %}
+        {% include "includes/navbar.html" %}
+        {% block content %}{% endblock %}
+    </body>
+
+</html>

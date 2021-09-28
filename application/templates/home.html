@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="hero is-light is-medium" id="intro">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1" id="typewriter">Graphics Processing Unit</h1>
+            <h1 class="subtitle is-3 mr-2" style="display: inline-block;" id="typewriter1">AKA the GPU, the future of computing</h1>
+            </br></br>
+            <p class="subtitle is-4" id="scroll-prompt">Scroll down to learn more!</p>
+        </div>
+    </div>
+</section>
+
+<div class="parallax"
+    style="background-image:url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg);">
+</div>
+
+<section class="section has-background-dark" id="projects">
+    <div class="container">
+        <h1 class="title has-text-light has-text-centered is-2">What is it?</h1>
+        <h2 class="content has-text-light has-text-centered">
+            The GPU stands for “Graphical Processing Unit”. It is one of the most important components of any modern computer, no matter what the computer is used for. The GPU is essentially an electronic circuit that the computer uses to create graphics, such as images and videos, and render them on a monitor. The GPU is considered the processor of the graphics card in a computer, much like what a CPU is to a computer. However, unlike the CPU, a GPU is designed specifically for performing complex calculations that are necessary for graphics rendering.
+        </h2>
+    </div>
+</section>
+
+<div class="parallax"
+    style="background-image:url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg);">
+</div>
+
+<section class="section has-background-light" id="contact">
+    <div class="container">
+        <h1 class="title has text-dark has-text-centered is-2">History of the GPU</h1>
+        <h2 class="content has-text-dark has-text-centered">
+            The first origins of the GPU are traced back to as early as 1951, when MIT built a flight simulator for the Navy. Although this device was considered the first 3D graphics system, the foundations for the GPU we know today was formed in the mid-70s, with devices known as video-shifters and video address generators. In 1981, IBM released the Monochrome Display Adapter (MDA), which provided text-only displays of green or white text on a black screen. In 1983, Intel released the ISBX 275 Video Graphics Controller Multimodule Board, which was revolutionary because it was able to display 8 colours at a resolution of 256x256, or in monochrome at 512x512. The company S3 Graphics introduced the S3 86C911 in 1991, which was known for its speed. Many companies imitated this, which meant that by 1995, almost every major seller of graphics cards had support for 2D hardware acceleration in their products. Overall the early 1990s were a determining time for graphics hardware and who sold it. One notable company that became prominent during this time was NVIDIA, who had control of nearly 25 percent of the market by 1997.</br></br>
+
+            The history of modern GPUs starts in 1995, when support for 3D was first introduced to graphics cards. This, along with 32-bit operating systems and the concept of affordable personal computers made for some large scale changes in the industry. A company called 3DFx released a graphics card called Voodoo, which, when used with a separate 2D graphics card, could render 3D. This dominated the market, and rendered any graphics card that could only render 2D graphics obsolete. The company’s next creation, Voodoo 2, had three onboard chips and was one of the first video cards to support the parallel work of multiple cards within a computer. Slowly, companies started working towards integrating 2D acceleration with the 3D functionality in one chip. In 1999, the NVIDIA GeForce 256 was released, and for the first time, the company marketed it as a “graphics processing unit”, stating that it was a “single-chip processor with integrated transform, lighting, triangle setup/clipping, and rendering engines that is capable processing a minimum of 10 millions polygons per second.”</br></br>
+
+            The idea of “General Purpose GPUs” started to gain popularity in 2007. Both NVIDIA and their main competition, a company called ATI, had been packing their graphics cards with more and more functionality. However, the two companies each took their own approach to the GPGPU (general purpose computing GPU). In 2007, NVIDIA released a development environment called CUDA, which was intended to be a model for programming computing. Two years later, another framework called OpenCL became popular because its low level APIs could be used to efficiently program hardware like CPUs, GPUs, and more. Because of these frameworks, the GPU became a more generalized computing device.</br></br>
+
+            Overall, the GPU has come a long way from the time it was first invented. Today, GPUs are not only for processing graphics. Their amazing capabilities mean they have applications in a whole plethora of fields such as machine learning, scientific image processing, linear statistics, and medical research. GPUs can add more programmability to the core architecture of a computer and, as time passes, they will likely evolve into more of a general purpose core, much like the CPU in modern computers.</br></br>
+        </h2>
+    </div>
+</section>
+
+<div class="parallax"
+    style="background-image:url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg)">
+</div>
+
+<section class="section has-background-dark" id="projects">
+    <div class="container">
+        <h1 class="title has-text-light has-text-centered is-2">How does it work?</h1>
+        <h2 class="content has-text-light has-text-centered">
+            Rendering images and video on a monitor is not an easy process. The process by which this happens consists of the graphics card working closely with other parts of the computer. The graphics card is connected to the motherboard for data and power. It houses the GPU, which does most of the calculations needed to render images. Typically, the GPU is positioned under a fan or a heat sink because it produces a lot of heat. The graphics card also contains VRAM (Video Memory), which is used to hold information about each pixel on the screen and temporarily store completed pictures before they are rendered. Finally, the graphics card is connected to the monitor via the motherboard and a cable so that the user can see the final result.</br></br> 
+
+            Here is a breakdown of how the graphics card works with these other components to render images on the screen. First, the CPU, working with software, sends information about an image to the graphics card. Using this information, the GPU decides how to use the pixels on the screen to create the desired image. A pixel is the smallest unit of a digital image or graphic that can be represented on a digital display device. The data the GPU needs to store about each pixel is stored in the video memory (VRAM). After this, to make a 3D image, the graphics card creates a “wire frame” out of only straight lines. It then fills in the remaining pixels of the image (known as “rasterizing”), and adds lighting, colour, and texture. It determines how these elements factor into the image using a variety of mathematical calculations and equations, such as the mathematical concept of vectors and the Phong lighting equation. Finally, if needed, it stores the completed image in the VRAM before it is sent to the monitor to render, typically via an HDMI cable. Because of the way the GPU is designed, this process is extremely fast. In fact, for any high quality real time games, this process has to run 60 to 120 times every second. Without a GPU dedicated to doing all the calculations required for this process, the workload would be far too much for the computer to handle.</br></br>
+
+Most modern graphics cards plug into a PCIe x16 expansion slot. However, not all computers, such as laptops and other smaller devices, come with such a slot. Because of this, they come with integrated graphics, which is where graphics capabilities come integrated with the CPU. Integrated graphics almost have the same capabilities as regular graphics cards, but they do not have their own VRAM, which means they have to share the system’s RAM. This makes them not ideal for graphics intensive operations like gaming, but a computer with modern integrated graphics can still more than easily render 2D, such as web browsers and most other essential applications.</br></br>
+        </h2>
+    </div>
+</section>
+
+<div class="parallax"
+    style="background-image:url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg)">
+</div>
+
+<section class="section has-background-light" id="contact">
+    <div class="container">
+        <h1 class="title has text-dark has-text-centered is-2">History of the GPU</h1>
+        <h2 class="content has-text-dark has-text-centered">
+            From the time graphics cards were invented, companies like NVIDIA and AMD are constantly coming up with new and better graphics cards, pushing the limits of graphics rendering as we know it. Here are some of the best, most cutting-edge graphics cards of this year.
+
+One of the best GPUs out there is the NVIDIA GeForce RTX 3080. For a graphics card of its size and price, the 3080 packs quite a punch. It is known best for its amazing graphics when it comes to 4K gaming. It has a 50 to 80% increase in performance from the RTX 2080, and very easily handles the rendering of games in high resolution. It has a base clock speed of 1.44 GHz, with a potential maximum of 1.71 GHz when boosted, while still maintaining relatively low temperatures. It also comes with 10 GB of memory. Interestingly enough, the RTX 3080 is almost half the price of its predecessors, making it an accessible option for anyone that wants to get into 4K gaming without blowing their entire budget.
+
+With a base clock of 1.40 GHz, a potential of 1.70 GHz with boosting, and a whopping 24 GB of memory included, the NVIDIA GeForce RTX 3090 is easily one of the best performing (if not the best) graphics cards out there. While easily handling everything its predecessors can, it can even handle 8K gaming at 60fps; however it’s not completely perfect at this level. However, this amazing performance comes at quite a price, starting at about $1900 CAD. With that price, and also the fact that it is quite large, it’s too much GPU for most people. This graphics card is more meant for people that are doing intensive 3D graphics manipulation and video rendering and don’t really care about price, rather than just your average gamer. 
+
+Finally, another graphics card that is hot in the market right now (and likely will be for quite a while) is the NVIDIA GeForce RTX 3070. This graphics card has a core clock speed of 1.50 GHz, going up to a boost clock speed of 1.73 GHz. It is known for its awesome performance, but more importantly, it’s known for its value. While it may not have the staggering specs of the 3080 and the 3090, it brings 4K gaming to the general public for a reasonable price, making it a top choice for many people when it comes to graphics cards. 
+        </h2>
+    </div>
+</section>
+
+<div class="parallax"
+    style="background-image:url(https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_960_720.jpg); height:75px;">
+</div>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+<nav class="navbar is-dark is-fixed-top" role="navigation"
+    aria-label="main navigation">
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-start">
+            <a href="{{ url_for('home', title="Home") }}#" class="navbar-item">
+                Home
+            </a>
+
+            <a class="navbar-item" href="{{ url_for('home', title="Home") }}#projects">
+                Projects
+            </a>
+
+            <a href="{{ url_for('home', title="Home") }}#contact" class="navbar-item">
+                Contact Me
+            </a>
+            <!--<a href="{ url_for('about_me', title="About Me") }" class="navbar-item">-->
+                <!--About Me-->
+            <!--</a>-->
+        </div>
+
+        <div class="navbar-end">
+            <a href="https://github.com/pranavrao145" target="_blank" class="navbar-item">
+                <span class="icon is-medium">
+                    <i class="fab fa-github fa-lg"></i>
+                </span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCjwS1N2iqOiJm2OS0s1lcAA" target="_blank" class="navbar-item">
+                <span class="icon is-medium">
+                    <i class="fab fa-youtube fa-lg"></i>
+                </span>
+            </a>
+            <a href="https://www.instagram.com/_pr145_/" target="_blank" class="navbar-item">
+                <span class="icon is-medium">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>
