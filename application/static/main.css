@@ -25,6 +25,16 @@ html, body {
   left:0 !important;
 }
 
+.image-sized {
+  width: 500px;
+  height: auto;
+}
+
+.image-sized-alt {
+  width: auto;
+  height: 280px;
+}
+
 .is-fullheight {
   height: 100%;
 }
