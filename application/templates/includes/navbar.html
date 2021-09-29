@@ -2,13 +2,6 @@
     aria-label="main navigation">
 
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
         <div class="navbar-start">
             <a href="{{ url_for('home') }}#" class="navbar-item">
                 Start
@@ -24,13 +17,17 @@
             <a href="{{ url_for('home') }}#latest" class="navbar-item">
                 Cutting edge GPUs
             </a>
+            <a href="{{ url_for('references') }}" class="navbar-item">
+                References
+            </a>
         </div>
 
         <div class="navbar-end">
             <a href="https://github.com/pranavrao145/computer-hardware-assignment" target="_blank" class="navbar-item">
-                <span class="icon is-medium">
+                <span class="icon is-medium mr-1">
                     <i class="fab fa-github fa-lg"></i>
                 </span>
+                View Source Code
             </a>
         </div>
     </div>
