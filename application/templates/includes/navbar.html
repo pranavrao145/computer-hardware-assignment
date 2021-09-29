@@ -2,21 +2,21 @@
     aria-label="main navigation">
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a href="{{ url_for('home') }}#" class="navbar-item">
+            <a href="{{ url_for('home', title='Home') }}#" class="navbar-item">
                 Start
             </a>
 
-            <a class="navbar-item" href="{{ url_for('home') }}#general">
+            <a class="navbar-item" href="{{ url_for('home', title='Home') }}#general">
                 What is it?
             </a>
 
-            <a href="{{ url_for('home') }}#process" class="navbar-item">
+            <a href="{{ url_for('home', title='Home') }}#process" class="navbar-item">
                 How does it work?
             </a>
-            <a href="{{ url_for('home') }}#latest" class="navbar-item">
+            <a href="{{ url_for('home', title='Home') }}#latest" class="navbar-item">
                 Cutting edge GPUs
             </a>
-            <a href="{{ url_for('references') }}" class="navbar-item">
+            <a href="{{ url_for('references', title='References') }}" class="navbar-item">
                 References
             </a>
         </div>
